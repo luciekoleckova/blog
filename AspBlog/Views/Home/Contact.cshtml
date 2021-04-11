@@ -1,0 +1,58 @@
+﻿@{
+    ViewData["Title"] = "Kontakt";
+}
+
+<p>
+    <img src="~/images/email.png" alt="email" class="vlevo" />
+    Pokud mi chcete něco sdělit, napište mi email na <strong>luciekoleckova1(zavináč)seznam.cz nebo využijte formuláře níže</strong>.
+</p>
+
+<!--<p class="centrovany">-->
+    @*<section class="bg-secondary centrovany" id="section-contact">
+        <div class="container text-center text-white py-5">
+<p class="lead">Contact me</p>
+<div class="row justify-content-center">
+    <div class="container">
+    <div class="col-sm-12 col-md-10 col-lg-8">
+        <form>
+            <div class="form-group">
+                <label for="exampleFormControlInput1">Name</label>
+                <input type="email" class="form-control" id="exampleFormControlInput1">
+            </div>
+            <div class="form-group">
+                <label for="exampleFormControlInput1">Email</label>
+                <input type="email" class="form-control" id="exampleFormControlInput1">
+            </div>
+
+            <div class="form-group">
+                <label for="exampleFormControlTextarea1">Message</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            </div>
+            <button type="submit" class="btn btn-info mb-2">Send</button>
+        </form>
+    </div>
+</div>
+    </div>
+        </div>
+    </section>*@
+<!--</p>-->
+<form action="mailto:luciekoleckova1@seznam.cz" method="post">
+    <div class="form-group">
+        <label for="exampleInputEmail1">Email</label>
+        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Napiš email">
+
+    </div>
+    <div class="form-group">
+        <label for="exampleInputPassword1">Jméno</label>
+        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Napiš jméno">
+    </div>
+    <div class="form-check">
+
+        <label class="form-check-label" for="exampleCheck1"></label>
+    </div>
+
+    <div class="form-group">
+        <label for="exampleFormControlTextarea1">Zpráva</label>
+        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+    </div><button type="submit" class="btn btn-primary">Odeslat</button>
+</form>

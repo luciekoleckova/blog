@@ -1,0 +1,45 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Můj blog</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+</head>
+<body>
+   <!-- <partial name="_CookieConsentPartial" />-->
+    <header id="zmena">
+        <div id="logo"><h1></h1></div>
+        <nav text-align="center">
+            <ul>
+                <li><a asp-controller="Home" asp-action="Index">Domů</a></li>
+                <li><a asp-controller="Articles" asp-action="Index">Články</a></li>
+                <li><a asp-controller="Home" asp-action="Skills">Dovednosti</a></li>
+                <li><a asp-controller="Home" asp-action="References">Reference</a></li>
+                <li><a asp-controller="Home" asp-action="Contact">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <article>
+        <div id="centrovac">
+            <header>
+                <h1>@ViewData["Title"]</h1>
+            </header>
+
+            <section>
+                <div class="container body-content">
+                    @RenderBody()
+                </div>
+            </section>
+            <div class="cistic"></div>
+        </div>
+    </article>
+
+   
+
+
+   
+</body>
+</html>
